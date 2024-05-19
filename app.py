@@ -60,5 +60,11 @@ def predict():
         'top_data': top_data
     })
 
+@app.route('/python-version')
+def python_version():
+    import sys
+    return sys.version
+
+
 if __name__ == "__main__":
     app.run(debug=True)
